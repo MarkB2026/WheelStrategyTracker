@@ -12,13 +12,14 @@ body{margin:0;min-height:100vh;display:grid;place-items:center;background:radial
 .panel{width:min(540px,calc(100% - 36px));padding:34px;border:1px solid #655022;border-radius:16px;background:#171612;text-align:center}
 h1{margin:0 0 6px;font-size:27px}p{color:#b6b1a5}.buttons{display:grid;gap:12px;margin:24px 0}
 .button{display:block;padding:14px;border-radius:9px;background:var(--accent);color:#0c0b07;font-weight:800;text-decoration:none}
-.button:hover{background:#f0cb52}.small{font-size:13px}a{color:#f0d46f}
+.button:hover{background:#f0cb52}.beta-warning{margin:18px 0;padding:14px 17px;text-align:left;border:1px solid #806624;border-radius:10px;background:#292313}.beta-warning strong{color:#f0cb52;font-size:13px}.beta-warning p{font-size:13px;line-height:1.5;margin:6px 0 0;color:#d3c9ae}.small{font-size:13px}a{color:#f0d46f}
 </style>
 </head>
 <body>
 <main class="panel">
 <h1>WheelBot Beta v1.2.37</h1>
 <p id="status">Preparing your Windows installer…</p>
+<div class="beta-warning"><strong>⚠ BETA · AUTONOMOUS TRADING</strong><p>WheelBot has been tested running the wheel strategy on a $50,000 account. It can place live trades automatically. Autonomous strategy settings are not available in the beta; they will be introduced in the official release. Monitor live operation carefully.</p></div>
 <div class="buttons"><a id="download" class="button" href="https://github.com/MarkB2026/TraderRepository-Downloads/releases/download/wheelbot-v1.2.37-streamlit-fix/WheelBot_v1_2_37_Clean_Connections.exe">⬇ Download WheelBot Beta v1.2.37</a></div>
 <p class="small">If your download does not begin automatically, click the installer button above.</p>
 <p class="small"><a href="index.html">← Return to Wheel Strategy Tracker</a></p>
@@ -27,7 +28,7 @@ h1{margin:0 0 6px;font-size:27px}p{color:#b6b1a5}.buttons{display:grid;gap:12px;
 window.addEventListener('load',function(){
   window.setTimeout(function(){
     window.location.assign(document.getElementById('download').href);
-  },350);
+  },2500);
 });
 </script>
 </body>
